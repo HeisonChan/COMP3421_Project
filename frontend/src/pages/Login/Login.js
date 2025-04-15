@@ -1,25 +1,47 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
 import './Login.css';
-import logoImage from '../../assets/logo.png'; // Add your logo image
+import logoImage from '../../assets/logo.png'; 
 
 const Login = () => {
-  const [username, setUsername] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
-  const navigate = useNavigate();
+  const [username, setUsername] = useState(''); // username input varaible
+  const [password, setPassword] = useState(''); // password input variable 
+  const [error, setError] = useState(''); // error message variable
+  const userId = localStorage.getItem('userId'); // get userId from local storage
+  const navigate = useNavigate(); // hook to navigate between pages (Login -> Reigister / QuizList)
+  
 
+  // a. focus vistor stay on login page if they don't authenticate
+  const checkuserlogin = useCallback(() => {
+    // check useid contained in locol storage
+    if (userId) {
+      console.log("User ID found, navigating to /quizlist"); 
+      navigate('/quizlist'); 
+      return;
+    }
+    console.log("No user ID found");
+  }, [userId, navigate]);
+  
+  // OnLoad function Call
+  useEffect(() => {
+    checkuserlogin();
+  }, [checkuserlogin]);
+
+  // b. lgoin form data pass to api to authenticate user
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/login', {
+      // send input feild username and password to api  
+      const response = await axios.post(`${process.env.REACT_APP_API_URL}/login`, {
         username,
         password
       });
-      
-      if (response.data.token) {
-        localStorage.setItem('token', response.data.token);
+
+      // if api repononse ok, then pass to quizlist page
+      if (response.data.userId) {
+        localStorage.setItem('userId', response.data.userId);
+        localStorage.setItem('userName', response.data.username);
         navigate('/quizlist');
       }
     } catch (err) {

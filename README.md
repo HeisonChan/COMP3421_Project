@@ -1,5 +1,7 @@
 # COMP3421_Project
-This is PolyU COMP3421 Project - Online Quiz Application with Timer (COMP3421-25-P8)
+This is PolyU 2024-2025 Sem 2 COMP3421 Project - Online Quiz Application with Timer (COMP3421-25-P8)
+
+Note: Please do not copy or distribute this project without proper authorization. 
 
 ## Available Scripts
 
@@ -8,7 +10,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Open [http://localhost:3001](http://localhost:3001) to view it in your browser.
 
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
@@ -67,3 +69,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+`sudo mysql -u root -p -e "SHOW DATABASES;"`
+
+#data time challenage
+
+#countdown challenage.
