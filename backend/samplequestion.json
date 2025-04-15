@@ -1,0 +1,155 @@
+
+{
+  "questions": [
+    {
+      "questionText": "Which planet is known as the Red Planet?",
+      "options": ["Earth", "Mars", "Jupiter", "Venus"],
+      "correctAnswer": "Mars"
+    },
+    {
+      "questionText": "What is the capital of France?",
+      "options": ["London", "Paris", "Berlin", "Madrid"],
+      "correctAnswer": "Paris"
+    },
+    {
+      "questionText": "What is 2 + 2?",
+      "options": ["3", "4", "5", "6"],
+      "correctAnswer": "4"
+    },
+    {
+      "questionText": "Which gas do plants absorb from the atmosphere?",
+      "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+      "correctAnswer": "Carbon Dioxide"
+    },
+    {
+      "questionText": "Who wrote 'Romeo and Juliet'?",
+      "options": ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain"],
+      "correctAnswer": "William Shakespeare"
+    },
+    {
+      "questionText": "What is the largest mammal in the world?",
+      "options": ["Elephant", "Blue Whale", "Giraffe", "Great White Shark"],
+      "correctAnswer": "Blue Whale"
+    },
+    {
+      "questionText": "How many continents are there on Earth?",
+      "options": ["5", "6", "7", "8"],
+      "correctAnswer": "7"
+    },
+    {
+      "questionText": "What is the chemical symbol for water?",
+      "options": ["O2", "CO2", "H2O", "NaCl"],
+      "correctAnswer": "H2O"
+    },
+    {
+      "questionText": "Which animal is known as the 'King of the Jungle'?",
+      "options": ["Tiger", "Elephant", "Lion", "Cheetah"],
+      "correctAnswer": "Lion"
+    },
+    {
+      "questionText": "What is the primary language spoken in Spain?",
+      "options": ["French", "English", "Spanish", "Italian"],
+      "correctAnswer": "Spanish"
+    },
+    {
+      "questionText": "How many legs does a spider have?",
+      "options": ["4", "6", "8", "10"],
+      "correctAnswer": "8"
+    },
+    {
+      "questionText": "Which is the fastest land animal?",
+      "options": ["Cheetah", "Horse", "Kangaroo", "Ostrich"],
+      "correctAnswer": "Cheetah"
+    },
+    {
+      "questionText": "What is the largest organ in the human body?",
+      "options": ["Heart", "Liver", "Skin", "Lungs"],
+      "correctAnswer": "Skin"
+    },
+    {
+      "questionText": "How many days are in a leap year?",
+      "options": ["365", "366", "367", "364"],
+      "correctAnswer": "366"
+    },
+    {
+      "questionText": "What is the capital of Japan?",
+      "options": ["Beijing", "Seoul", "Tokyo", "Bangkok"],
+      "correctAnswer": "Tokyo"
+    },
+    {
+      "questionText": "Which metal is liquid at room temperature?",
+      "options": ["Gold", "Iron", "Mercury", "Silver"],
+      "correctAnswer": "Mercury"
+    },
+    {
+      "questionText": "What is the name of the fairy in Peter Pan?",
+      "options": ["Cinderella", "Tinker Bell", "Ariel", "Belle"],
+      "correctAnswer": "Tinker Bell"
+    },
+    {
+      "questionText": "What is the square root of 16?",
+      "options": ["2", "3", "4", "5"],
+      "correctAnswer": "4"
+    },
+    {
+      "questionText": "Which is the longest river in the world?",
+      "options": ["Amazon", "Nile", "Yangtze", "Mississippi"],
+      "correctAnswer": "Nile"
+    },
+    {
+      "questionText": "How many colors are there in a rainbow?",
+      "options": ["5", "6", "7", "8"],
+      "correctAnswer": "7"
+    },
+    {
+      "questionText": "Which gas do humans breathe in for survival?",
+      "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
+      "correctAnswer": "Oxygen"
+    },
+    {
+      "questionText": "Which is the smallest continent by land area?",
+      "options": ["Europe", "Antarctica", "Australia", "South America"],
+      "correctAnswer": "Australia"
+    },
+    {
+      "questionText": "What is the main ingredient in guacamole?",
+      "options": ["Tomato", "Avocado", "Cucumber", "Onion"],
+      "correctAnswer": "Avocado"
+    },
+    {
+      "questionText": "Who painted the Mona Lisa?",
+      "options": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Claude Monet"],
+      "correctAnswer": "Leonardo da Vinci"
+    },
+    {
+      "questionText": "Which planet is closest to the Sun?",
+      "options": ["Venus", "Earth", "Mercury", "Mars"],
+      "correctAnswer": "Mercury"
+    },
+    {
+      "questionText": "What is the name of the largest ocean on Earth?",
+      "options": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
+      "correctAnswer": "Pacific Ocean"
+    },
+    {
+      "questionText": "What is the freezing point of water in Celsius?",
+      "options": ["0", "32", "100", "-10"],
+      "correctAnswer": "0"
+    },
+    {
+      "questionText": "How many sides does a hexagon have?",
+      "options": ["5", "6", "7", "8"],
+      "correctAnswer": "6"
+    },
+    {
+      "questionText": "Which bird is known for its ability to mimic human speech?",
+      "options": ["Crow", "Sparrow", "Parrot", "Eagle"],
+      "correctAnswer": "Parrot"
+    },
+    {
+      "questionText": "What is the national flower of Japan?",
+      "options": ["Rose", "Tulip", "Cherry Blossom", "Lily"],
+      "correctAnswer": "Cherry Blossom"
+    }
+  ]
+}
