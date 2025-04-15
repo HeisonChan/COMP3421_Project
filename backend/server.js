@@ -8,14 +8,15 @@ app.use(cors());
 app.use(express.json());
 
 const pool = mysql.createPool({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME,
+  host: process.env.RAILWAY_PRIVATE_DOMAIN || process.env.DB_HOST,
+  user: process.env.MYSQLUSER || process.env.DB_USER,
+  password: process.env.MYSQLPASSWORD || process.env.DB_PASSWORD,
+  database: process.env.MYSQLDATABASE || process.env.DB_NAME,
+  port: process.env.MYSQLPORT || 3306,
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0,
-  timezone: '+08:00' // Add Hong Kong timezone setting
+  timezone: '+08:00'
 });
 
 /**
@@ -32,6 +33,13 @@ const pool = mysql.createPool({
  * 8. /quiz/:id/results/:userId (QuizReview)   - (Read)   {quizzes}       get quiz results for review
  *                                                        {quiz_attempts}                        
  */
+
+app.get('/', async (req, res) => {
+  res.status(201).json({
+    message: 'Hello World'
+  });
+
+});
 
 // 1. Auth endpoints
 app.post('/register', async (req, res) => {
