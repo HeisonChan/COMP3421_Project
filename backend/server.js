@@ -8,15 +8,16 @@ app.use(cors());
 app.use(express.json());
 
 const pool = mysql.createPool({
-  host: process.env.RAILWAY_PRIVATE_DOMAIN || process.env.DB_HOST,
+  host: process.env.RAILWAY_PRIVATE_DOMAIN || 'localhost',
   user: process.env.MYSQLUSER || process.env.DB_USER,
   password: process.env.MYSQLPASSWORD || process.env.DB_PASSWORD,
   database: process.env.MYSQLDATABASE || process.env.DB_NAME,
-  port: process.env.MYSQLPORT || 3306,
+  port: parseInt(process.env.MYSQLPORT || '3306'),
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0,
-  timezone: '+08:00'
+  timezone: '+08:00',
+  ssl: process.env.NODE_ENV === 'production' ? {} : false
 });
 
 /**
