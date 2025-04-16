@@ -2,6 +2,9 @@ const express = require('express');
 const mysql = require('mysql2/promise');
 const cors = require('cors');
 require('dotenv').config();
+const dns = require('dns');
+
+dns.setDefaultResultOrder('ipv4first'); 
 
 const app = express();
 app.use(cors());
@@ -16,9 +19,18 @@ const pool = mysql.createPool({
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0,
-  timezone: '+08:00',
-  ssl: process.env.NODE_ENV === 'production' ? {} : false
+  timezone: '+08:00'
+  
 });
+
+pool.getConnection()
+  .then(connection => {
+    console.log('Database connected successfully');
+    connection.release();
+  })
+  .catch(err => {
+    console.error('Error connecting to the database:', err);
+  });
 
 /**
  * 1. register                  (Register)     - (create) {User}          register a new user to database table users
