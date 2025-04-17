@@ -2,6 +2,21 @@
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
+    padding-top: 60px;
+  }
+
+  .fixed-timer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; 
+    color: red; 
+    font-weight: bold; 
+    text-align: center; 
+    padding: 10px 0;
+    z-index: 1000; 
+    border-bottom: 2px solid #ccc; 
   }
   
   .questions-list {
@@ -15,6 +30,7 @@
     border: 1px solid #ddd;
     border-radius: 5px;
   }
+
   
   .options {
     display: flex;
@@ -31,14 +47,23 @@
   .submit-section {
     text-align: center;
   }
+
+  .submit-button {
+    width: 20vw;
+    background-color:  rgb(103, 103, 238);
+  }
+
+  .submit-button:hover {
+    background-color: rgb(81, 81, 219);
+  }
   
   .warning {
-    color: red;
+    color: rgb(241, 79, 79);
     margin-top: 10px;
   }
   
   button {
-    width: 20vw;
+    width: 100%;
     padding: 0.75rem;
     background-color: #007bff;
     color: white;

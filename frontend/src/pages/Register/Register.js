@@ -45,6 +45,7 @@ const Register = () => {
 
       if (response.status === 201) {
         localStorage.setItem('userId', response.data.userId); 
+        localStorage.setItem('userName', response.data.username);
         navigate('/quizlist');
       }
     } catch (err) {

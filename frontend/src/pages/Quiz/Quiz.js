@@ -172,7 +172,16 @@ const Quiz = () => {
   return (
     <div className="quiz-container">
       <h1>{quizData.quiz.title}</h1>
-      <p>Time Left: {minutes}:{seconds < 10 ? `0${seconds}` : seconds}</p>
+      {/* Timer */}
+      <div className="fixed-timer">
+        {timeRemaining > 0 ? (
+          <p>Time Left: {minutes}:{seconds < 10 ? `0${seconds}` : seconds}</p>
+        ) : (
+          <p style={{ color: 'red', fontWeight: 'bold' }}>Time is up, you are not allowed to answer now</p>
+        )}
+      </div>
+
+      {/* Quiz Content */}
       <div className="questions-list">
         {quizData.questions.map((question, index) => (
           <div key={question.id} className="question-block">
@@ -193,9 +202,12 @@ const Quiz = () => {
           </div>
         ))}
       </div>
+
+      {/* Submit Section */}
       <div className="submit-section">
         <button 
           onClick={submitQuiz}
+          className='submit-button'
           disabled={timeRemaining <= 0 || !allAnswered}
         >
           Submit Quiz

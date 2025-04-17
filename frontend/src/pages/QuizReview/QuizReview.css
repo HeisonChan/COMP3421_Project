@@ -62,8 +62,9 @@
 }
 
 .back-section button {
+  width: 20vw;
   padding: 10px 20px;
-  background-color: #007bff;
+  background-color:  rgb(103, 103, 238);
   color: white;
   border: none;
   border-radius: 4px;
@@ -71,8 +72,9 @@
   font-size: 16px;
 }
 
+
 .back-section button:hover {
-  background-color: #0056b3;
+  background-color: rgb(81, 81, 219);
 }
 
 .error-message {

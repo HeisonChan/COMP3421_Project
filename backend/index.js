@@ -1,4 +1,5 @@
 const express = require('express');
+const serverless = require('serverless-http');
 const mysql = require('mysql2/promise');
 const cors = require('cors');
 require('dotenv').config();
@@ -10,6 +11,7 @@ dns.setDefaultResultOrder('ipv4first');
 const app = express();
 app.use(cors());
 app.use(express.json());
+
 
 const pool = mysql.createPool({
   host: process.env.RAILWAY_PRIVATE_DOMAIN || 'localhost',
@@ -23,6 +25,8 @@ const pool = mysql.createPool({
   timezone: '+08:00'
   
 });
+
+
 
 pool.getConnection()
   .then(connection => {
@@ -48,7 +52,7 @@ pool.getConnection()
  *                                                        {quiz_attempts}                        
  */
 
-app.get('/', async (req, res) => {
+app.get('/test', async (req, res) => {
   res.status(201).json({
     message: 'Hello World'
   });
@@ -73,8 +77,7 @@ app.post('/register', async (req, res) => {
     // Send only ONE response with both the success message and new user ID
     res.status(201).json({
       message: 'Registration successful',
-      userId: result.insertId,
-      username: username
+      userId: result.insertId
     });
   } catch (error) {
     console.error('Registration error:', error);
@@ -436,5 +439,7 @@ app.get('/quiz/:id/results/:userId', async (req, res) => {
   }
 });
 
-const port = process.env.PORT || 5000;
-app.listen(port, () => console.log(`Server running on port ${port}`));
+// const port = process.env.PORT || 5000;
+// app.listen(port, () => console.log(`Server running on port ${port}`));
+
+module.exports.handler = serverless(app);
