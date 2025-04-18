@@ -1,155 +1,405 @@
-
 {
   "questions": [
     {
-      "questionText": "Which planet is known as the Red Planet?",
-      "options": ["Earth", "Mars", "Jupiter", "Venus"],
-      "correctAnswer": "Mars"
+      "questionText": "Which of the following best describes the trade-off when using a CSS framework like Bootstrap versus custom CSS?",
+      "options": ["Faster development but less customization", "More customization but slower development", "Better performance but higher complexity", "Lower complexity but worse performance"],
+      "correctAnswer": "Faster development but less customization"
     },
     {
-      "questionText": "What is the capital of France?",
-      "options": ["London", "Paris", "Berlin", "Madrid"],
-      "correctAnswer": "Paris"
+      "questionText": "What is the most likely consequence if an HTML tag is not properly closed?",
+      "options": ["The browser will not display the page", "The page will display with unexpected layout issues", "The server will return an error", "The JavaScript will not execute"],
+      "correctAnswer": "The page will display with unexpected layout issues"
     },
     {
-      "questionText": "What is 2 + 2?",
-      "options": ["3", "4", "5", "6"],
-      "correctAnswer": "4"
+      "questionText": "What is the purpose of the xhr.onreadystatechange event handler in AJAX?",
+      "options": ["It sends the request to the server", "It checks if the server response is ready", "It parses the JSON response", "It handles errors in the request"],
+      "correctAnswer": "It checks if the server response is ready"
     },
     {
-      "questionText": "Which gas do plants absorb from the atmosphere?",
-      "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
-      "correctAnswer": "Carbon Dioxide"
+      "questionText": "Why do we check both xhr.readyState === 4 and xhr.status === 200 in AJAX?",
+      "options": ["To ensure the request is complete and successful", "To check if the server is available", "To verify the data format", "To handle cross-origin requests"],
+      "correctAnswer": "To ensure the request is complete and successful"
     },
     {
-      "questionText": "Who wrote 'Romeo and Juliet'?",
-      "options": ["Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain"],
-      "correctAnswer": "William Shakespeare"
+      "questionText": "In an AJAX POST request, what does xhr.send('username=John&password=123456') do?",
+      "options": ["Sends the data as query parameters", "Sends the data in the request body", "Encodes the data in the URL", "Does nothing"],
+      "correctAnswer": "Sends the data in the request body"
     },
     {
-      "questionText": "What is the largest mammal in the world?",
-      "options": ["Elephant", "Blue Whale", "Giraffe", "Great White Shark"],
-      "correctAnswer": "Blue Whale"
+      "questionText": "What is a key benefit of using React for building user interfaces?",
+      "options": ["It uses a virtual DOM for efficient updates", "It is a full-stack framework", "It has built-in server-side rendering", "It supports two-way data binding"],
+      "correctAnswer": "It uses a virtual DOM for efficient updates"
     },
     {
-      "questionText": "How many continents are there on Earth?",
-      "options": ["5", "6", "7", "8"],
-      "correctAnswer": "7"
+      "questionText": "What is a potential drawback of using React?",
+      "options": ["It has a steep learning curve for beginners", "It does not support component-based architecture", "It requires a lot of boilerplate code", "It is not suitable for large applications"],
+      "correctAnswer": "It has a steep learning curve for beginners"
     },
     {
-      "questionText": "What is the chemical symbol for water?",
-      "options": ["O2", "CO2", "H2O", "NaCl"],
-      "correctAnswer": "H2O"
+      "questionText": "What advantage does React offer compared to vanilla JavaScript?",
+      "options": ["Easier state management for complex UIs", "Better performance for all applications", "Less code to write", "Native support for animations"],
+      "correctAnswer": "Easier state management for complex UIs"
     },
     {
-      "questionText": "Which animal is known as the 'King of the Jungle'?",
-      "options": ["Tiger", "Elephant", "Lion", "Cheetah"],
-      "correctAnswer": "Lion"
+      "questionText": "What is a disadvantage of using React compared to vanilla JavaScript?",
+      "options": ["It requires additional build tools and setup", "It cannot manipulate the DOM directly", "It does not support event handling", "It is slower for simple static pages"],
+      "correctAnswer": "It requires additional build tools and setup"
     },
     {
-      "questionText": "What is the primary language spoken in Spain?",
-      "options": ["French", "English", "Spanish", "Italian"],
-      "correctAnswer": "Spanish"
+      "questionText": "What is a common challenge when integrating an external API into your code?",
+      "options": ["Handling rate limits and API keys", "Writing SQL queries", "Managing server hardware", "Optimizing database indexes"],
+      "correctAnswer": "Handling rate limits and API keys"
     },
     {
-      "questionText": "How many legs does a spider have?",
-      "options": ["4", "6", "8", "10"],
-      "correctAnswer": "8"
+      "questionText": "What is an advantage of using JSON over XML?",
+      "options": ["JSON is more human-readable", "JSON supports schemas", "JSON is better for complex data structures", "JSON is faster to parse"],
+      "correctAnswer": "JSON is faster to parse"
     },
     {
-      "questionText": "Which is the fastest land animal?",
-      "options": ["Cheetah", "Horse", "Kangaroo", "Ostrich"],
-      "correctAnswer": "Cheetah"
+      "questionText": "What is a disadvantage of JSON compared to XML?",
+      "options": ["JSON does not support comments", "JSON is less secure", "JSON cannot represent hierarchical data", "JSON is not supported by web browsers"],
+      "correctAnswer": "JSON does not support comments"
     },
     {
-      "questionText": "What is the largest organ in the human body?",
-      "options": ["Heart", "Liver", "Skin", "Lungs"],
-      "correctAnswer": "Skin"
+      "questionText": "What is the primary purpose of using AJAX for server-client communication?",
+      "options": ["To load data without refreshing the page", "To validate user input on the client side", "To store data locally in the browser", "To enhance the styling of web pages"],
+      "correctAnswer": "To load data without refreshing the page"
     },
     {
-      "questionText": "How many days are in a leap year?",
-      "options": ["365", "366", "367", "364"],
-      "correctAnswer": "366"
+      "questionText": "Why should CSS and JavaScript be used as separate files instead of embedded in HTML?",
+      "options": ["It allows for better code organization and reusability", "It makes the HTML file smaller", "It improves the security of the application", "It enables faster parsing by the browser"],
+      "correctAnswer": "It allows for better code organization and reusability"
     },
     {
-      "questionText": "What is the capital of Japan?",
-      "options": ["Beijing", "Seoul", "Tokyo", "Bangkok"],
-      "correctAnswer": "Tokyo"
+      "questionText": "Which of the following is NOT a standard method for validating an email address in a signup form?",
+      "options": ["Checking syntax with regular expressions", "Sending a confirmation email", "Verifying the user's identity", "Checking if the domain has an MX record"],
+      "correctAnswer": "Verifying the user's identity"
     },
     {
-      "questionText": "Which metal is liquid at room temperature?",
-      "options": ["Gold", "Iron", "Mercury", "Silver"],
-      "correctAnswer": "Mercury"
+      "questionText": "What is the full name of URL?",
+      "options": ["Uniform Resource Locator", "Universal Resource Link", "Uniform Retrieval Location", "Universal Reference Locator"],
+      "correctAnswer": "Uniform Resource Locator"
     },
     {
-      "questionText": "What is the name of the fairy in Peter Pan?",
-      "options": ["Cinderella", "Tinker Bell", "Ariel", "Belle"],
-      "correctAnswer": "Tinker Bell"
+      "questionText": "Which option correctly lists four components of a URL?",
+      "options": ["Scheme, Host, Path, Query", "Protocol, Server, Directory, File", "Method, URL, Headers, Body", "Tag, Attribute, Value, Content"],
+      "correctAnswer": "Scheme, Host, Path, Query"
     },
     {
-      "questionText": "What is the square root of 16?",
-      "options": ["2", "3", "4", "5"],
-      "correctAnswer": "4"
+      "questionText": "What happens if a .php file is opened directly from the file system in a browser?",
+      "options": ["The PHP code is executed", "The source code is displayed", "The browser downloads the file", "An error message is shown"],
+      "correctAnswer": "The source code is displayed"
     },
     {
-      "questionText": "Which is the longest river in the world?",
-      "options": ["Amazon", "Nile", "Yangtze", "Mississippi"],
-      "correctAnswer": "Nile"
+      "questionText": "What is the primary role of the HTTP protocol in applications?",
+      "options": ["Requesting and receiving web resources", "Storing user data locally", "Executing server-side scripts", "Rendering graphics in the browser"],
+      "correctAnswer": "Requesting and receiving web resources"
     },
     {
-      "questionText": "How many colors are there in a rainbow?",
-      "options": ["5", "6", "7", "8"],
-      "correctAnswer": "7"
+      "questionText": "What is the main function of the TCP protocol?",
+      "options": ["To provide reliable, ordered delivery of data packets", "To resolve domain names to IP addresses", "To compress data for faster transmission", "To authenticate users on a network"],
+      "correctAnswer": "To provide reliable, ordered delivery of data packets"
     },
     {
-      "questionText": "Which gas do humans breathe in for survival?",
-      "options": ["Oxygen", "Nitrogen", "Carbon Dioxide", "Hydrogen"],
-      "correctAnswer": "Oxygen"
+      "questionText": "What is the primary role of the DNS protocol?",
+      "options": ["It translates domain names to IP addresses", "It encrypts internet traffic", "It manages email servers", "It optimizes network bandwidth"],
+      "correctAnswer": "It translates domain names to IP addresses"
     },
     {
-      "questionText": "Which is the smallest continent by land area?",
-      "options": ["Europe", "Antarctica", "Australia", "South America"],
-      "correctAnswer": "Australia"
+      "questionText": "If an element’s dimensions are specified as (800x600), what are its width and height?",
+      "options": ["Width: 800, Height: 600", "Width: 600, Height: 800", "Width: 800, Height: 800", "Width: 600, Height: 600"],
+      "correctAnswer": "Width: 800, Height: 600"
     },
     {
-      "questionText": "What is the main ingredient in guacamole?",
-      "options": ["Tomato", "Avocado", "Cucumber", "Onion"],
-      "correctAnswer": "Avocado"
+      "questionText": "Which of the following is not commonly used for web application development?",
+      "options": ["JavaScript", "CSS", "HTML", "PHP"],
+      "correctAnswer": "PHP"
     },
     {
-      "questionText": "Who painted the Mona Lisa?",
-      "options": ["Vincent van Gogh", "Pablo Picasso", "Leonardo da Vinci", "Claude Monet"],
-      "correctAnswer": "Leonardo da Vinci"
+      "questionText": "Which HTTP code indicates a successful response from a server?",
+      "options": ["200 OK", "404 Not Found", "500 Internal Server Error", "302 Found"],
+      "correctAnswer": "200 OK"
     },
     {
-      "questionText": "Which planet is closest to the Sun?",
-      "options": ["Venus", "Earth", "Mercury", "Mars"],
-      "correctAnswer": "Mercury"
+      "questionText": "What happens when an empty HTML file is opened in a web browser?",
+      "options": ["A blank page is displayed", "An error message appears", "The browser’s default homepage loads", "A '404 Not Found' page appears"],
+      "correctAnswer": "A blank page is displayed"
     },
     {
-      "questionText": "What is the name of the largest ocean on Earth?",
-      "options": ["Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean"],
-      "correctAnswer": "Pacific Ocean"
+      "questionText": "In CSS, which selector has the highest specificity?",
+      "options": ["ID selector", "Class selector", "Tag selector", "Universal selector"],
+      "correctAnswer": "ID selector"
     },
     {
-      "questionText": "What is the freezing point of water in Celsius?",
-      "options": ["0", "32", "100", "-10"],
-      "correctAnswer": "0"
+      "questionText": "Which statement about JavaScript is not true?",
+      "options": ["JavaScript is statically typed", "JavaScript supports client-side and server-side development", "JavaScript supports object-oriented programming", "JavaScript is executed by the web browser"],
+      "correctAnswer": "JavaScript is statically typed"
     },
     {
-      "questionText": "How many sides does a hexagon have?",
-      "options": ["5", "6", "7", "8"],
-      "correctAnswer": "6"
+      "questionText": "What is the purpose of the <meta> tag in HTML?",
+      "options": ["To provide metadata about the document", "To define the main content", "To create a navigation bar", "To insert images"],
+      "correctAnswer": "To provide metadata about the document"
     },
     {
-      "questionText": "Which bird is known for its ability to mimic human speech?",
-      "options": ["Crow", "Sparrow", "Parrot", "Eagle"],
-      "correctAnswer": "Parrot"
+      "questionText": "In JavaScript, what is the purpose of the 'addEventListener' method?",
+      "options": ["To attach an event handler to an element", "To create a new element", "To modify CSS styles", "To send an HTTP request"],
+      "correctAnswer": "To attach an event handler to an element"
     },
     {
-      "questionText": "What is the national flower of Japan?",
-      "options": ["Rose", "Tulip", "Cherry Blossom", "Lily"],
-      "correctAnswer": "Cherry Blossom"
+      "questionText": "What does the CSS property 'display: none' do?",
+      "options": ["Hides an element from the page", "Makes an element semi-transparent", "Changes an element’s position", "Increases an element’s size"],
+      "correctAnswer": "Hides an element from the page"
+    },
+    {
+      "questionText": "What is the purpose of the 'alt' attribute in an HTML <img> tag?",
+      "options": ["To specify the image source", "To provide alternative text for accessibility", "To set the image size", "To add a border to the image"],
+      "correctAnswer": "To provide alternative text for accessibility"
+    },
+    {
+      "questionText": "Which CSS property is used to control the spacing between elements?",
+      "options": ["padding", "margin", "border", "gap"],
+      "correctAnswer": "margin"
+    },
+    {
+      "questionText": "In JavaScript, what does the 'this' keyword refer to in a method of an object?",
+      "options": ["The global window object", "The object itself", "The parent function", "The event target"],
+      "correctAnswer": "The object itself"
+    },
+    {
+      "questionText": "What is the default value of the CSS 'position' property?",
+      "options": ["absolute", "relative", "fixed", "static"],
+      "correctAnswer": "static"
+    },
+    {
+      "questionText": "Which HTTP method is typically used to retrieve data from a server?",
+      "options": ["POST", "GET", "PUT", "DELETE"],
+      "correctAnswer": "GET"
+    },
+    {
+      "questionText": "In React, what is the purpose of the 'useState' hook?",
+      "options": ["To manage component state", "To fetch data from an API", "To handle side effects", "To navigate between routes"],
+      "correctAnswer": "To manage component state"
+    },
+    {
+      "questionText": "What does the JavaScript 'async' keyword do when used with a function?",
+      "options": ["Makes the function return a Promise", "Delays the function execution", "Runs the function synchronously", "Prevents errors in the function"],
+      "correctAnswer": "Makes the function return a Promise"
+    },
+    {
+      "questionText": "Which of the following is a valid way to include an external CSS file in HTML?",
+      "options": ["<style src='styles.css'>", "<link rel='stylesheet' href='styles.css'>", "<css href='styles.css'>", "<script src='styles.css'>"],
+      "correctAnswer": "<link rel='stylesheet' href='styles.css'>"
+    },
+    {
+      "questionText": "What is the purpose of the 'CORS' policy in web browsers?",
+      "options": ["To compress data during transmission", "To restrict cross-origin HTTP requests", "To cache server responses", "To encrypt network traffic"],
+      "correctAnswer": "To restrict cross-origin HTTP requests"
+    },
+    {
+      "questionText": "In JavaScript, what does the 'map' method do when called on an array?",
+      "options": ["Filters elements based on a condition", "Creates a new array with transformed elements", "Sorts the array in place", "Removes duplicates from the array"],
+      "correctAnswer": "Creates a new array with transformed elements"
+    },
+    {
+      "questionText": "Which HTML element is used to define a navigation section?",
+      "options": ["<header>", "<footer>", "<nav>", "<section>"],
+      "correctAnswer": "<nav>"
+    },
+    {
+      "questionText": "What is the role of the 'key' prop in React when rendering a list of components?",
+      "options": ["To style the component", "To uniquely identify elements for efficient updates", "To trigger an event", "To set the component’s state"],
+      "correctAnswer": "To uniquely identify elements for efficient updates"
+    },
+    {
+      "questionText": "Which CSS unit is relative to the font size of the root element?",
+      "options": ["px", "em", "rem", "vw"],
+      "correctAnswer": "rem"
+    },
+    {
+      "questionText": "What does the JavaScript 'fetch' API primarily do?",
+      "options": ["Stores data in local storage", "Makes HTTP requests to retrieve resources", "Parses HTML content", "Validates user input"],
+      "correctAnswer": "Makes HTTP requests to retrieve resources"
+    },
+    {
+      "questionText": "Which of the following is NOT a valid JavaScript data type?",
+      "options": ["String", "Boolean", "Float", "Undefined"],
+      "correctAnswer": "Float"
+    },
+    {
+      "questionText": "What is the purpose of the HTML 'data-' attribute?",
+      "options": ["To store custom data for scripting", "To define CSS styles", "To create hyperlinks", "To set meta information"],
+      "correctAnswer": "To store custom data for scripting"
+    },
+    {
+      "questionText": "In CSS, what does the 'flex' shorthand property define?",
+      "options": ["Flex grow, shrink, and basis", "Flex direction and wrap", "Justify and align content", "Margin and padding"],
+      "correctAnswer": "Flex grow, shrink, and basis"
+    },
+    {
+      "questionText": "Which status code indicates that a resource was not found on the server?",
+      "options": ["200 OK", "403 Forbidden", "404 Not Found", "500 Internal Server Error"],
+      "correctAnswer": "404 Not Found"
+    },
+    {
+      "questionText": "In React, what is a 'component'?",
+      "options": ["A reusable piece of UI", "A database query", "A CSS stylesheet", "A server endpoint"],
+      "correctAnswer": "A reusable piece of UI"
+    },
+    {
+      "questionText": "What is the purpose of the 'viewport' meta tag in HTML?",
+      "options": ["To control responsive design for mobile devices", "To set the page title", "To preload images", "To define character encoding"],
+      "correctAnswer": "To control responsive design for mobile devices"
+    },
+    {
+      "questionText": "Which HTML tag is used to define an unordered list?",
+      "options": ["<ol>", "<ul>", "<li>", "<dl>"],
+      "correctAnswer": "<ul>"
+    },
+    {
+      "questionText": "What does the CSS 'z-index' property control?",
+      "options": ["Element opacity", "Stacking order of elements", "Element size", "Text alignment"],
+      "correctAnswer": "Stacking order of elements"
+    },
+    {
+      "questionText": "In JavaScript, what is the purpose of the 'setTimeout' function?",
+      "options": ["To execute a function after a delay", "To loop a function indefinitely", "To stop code execution", "To handle HTTP requests"],
+      "correctAnswer": "To execute a function after a delay"
+    },
+    {
+      "questionText": "Which CSS property is used to create rounded corners on an element?",
+      "options": ["border-radius", "border-style", "box-shadow", "outline"],
+      "correctAnswer": "border-radius"
+    },
+    {
+      "questionText": "What is the purpose of the 'Content-Type' header in an HTTP request?",
+      "options": ["To specify the format of the request body", "To set the response status code", "To define the request method", "To cache the response"],
+      "correctAnswer": "To specify the format of the request body"
+    },
+    {
+      "questionText": "In React, what does the 'useEffect' hook do?",
+      "options": ["Manages state in functional components", "Handles side effects like data fetching", "Renders components conditionally", "Navigates between pages"],
+      "correctAnswer": "Handles side effects like data fetching"
+    },
+    {
+      "questionText": "Which JavaScript method is used to convert a JSON string into an object?",
+      "options": ["JSON.stringify()", "JSON.parse()", "JSON.convert()", "JSON.object()"],
+      "correctAnswer": "JSON.parse()"
+    },
+    {
+      "questionText": "What is the default display value for a <div> element in CSS?",
+      "options": ["inline", "block", "flex", "none"],
+      "correctAnswer": "block"
+    },
+    {
+      "questionText": "Which HTTP method is used to update an existing resource on a server?",
+      "options": ["GET", "POST", "PUT", "DELETE"],
+      "correctAnswer": "PUT"
+    },
+    {
+      "questionText": "In JavaScript, what does the 'spread operator' (...) do?",
+      "options": ["Combines arrays or objects", "Filters array elements", "Sorts an array", "Removes duplicates"],
+      "correctAnswer": "Combines arrays or objects"
+    },
+    {
+      "questionText": "Which HTML attribute specifies a unique identifier for an element?",
+      "options": ["class", "id", "name", "style"],
+      "correctAnswer": "id"
+    },
+    {
+      "questionText": "What is the purpose of the CSS 'transition' property?",
+      "options": ["To animate changes in property values", "To set element positioning", "To define font styles", "To control element visibility"],
+      "correctAnswer": "To animate changes in property values"
+    },
+    {
+      "questionText": "In React, what is a 'prop' used for?",
+      "options": ["To pass data to components", "To manage internal state", "To define CSS styles", "To handle API requests"],
+      "correctAnswer": "To pass data to components"
+    },
+    {
+      "questionText": "Which JavaScript event is triggered when a user clicks an element?",
+      "options": ["onchange", "onclick", "onhover", "onsubmit"],
+      "correctAnswer": "onclick"
+    },
+    {
+      "questionText": "What does the CSS 'box-sizing: border-box' property do?",
+      "options": ["Includes padding and border in element's width", "Excludes margins from element's size", "Centers the element", "Hides overflow content"],
+      "correctAnswer": "Includes padding and border in element's width"
+    },
+    {
+      "questionText": "Which protocol is commonly used for secure communication over the internet?",
+      "options": ["HTTP", "FTP", "HTTPS", "SMTP"],
+      "correctAnswer": "HTTPS"
+    },
+    {
+      "questionText": "In JavaScript, what does the 'filter' method do when called on an array?",
+      "options": ["Creates a new array with elements that pass a test", "Sorts the array", "Removes the first element", "Transforms each element"],
+      "correctAnswer": "Creates a new array with elements that pass a test"
+    },
+    {
+      "questionText": "Which HTML tag is used to create a hyperlink?",
+      "options": ["<link>", "<a>", "<href>", "<url>"],
+      "correctAnswer": "<a>"
+    },
+    {
+      "questionText": "What is the purpose of the 'localStorage' object in JavaScript?",
+      "options": ["To store data persistently in the browser", "To send data to a server", "To cache images", "To manage cookies"],
+      "correctAnswer": "To store data persistently in the browser"
+    },
+    {
+      "questionText": "In CSS, which property controls the visibility of an element without removing it from the layout?",
+      "options": ["display", "visibility", "opacity", "overflow"],
+      "correctAnswer": "visibility"
+    },
+    {
+      "questionText": "Which React hook is used to access the current URL or navigate programmatically?",
+      "options": ["useState", "useEffect", "useNavigate", "useContext"],
+      "correctAnswer": "useNavigate"
+    },
+    {
+      "questionText": "What is the purpose of the 'robots.txt' file in a web application?",
+      "options": ["To instruct search engine crawlers", "To store user data", "To define CSS styles", "To handle API authentication"],
+      "correctAnswer": "To instruct search engine crawlers"
+    },
+    {
+      "questionText": "In JavaScript, what does the 'try-catch' block do?",
+      "options": ["Handles exceptions and errors", "Loops through arrays", "Defines a function", "Sends HTTP requests"],
+      "correctAnswer": "Handles exceptions and errors"
+    },
+    {
+      "questionText": "Which CSS property is used to align items within a flex container?",
+      "options": ["justify-content", "align-items", "flex-direction", "flex-wrap"],
+      "correctAnswer": "align-items"
+    },
+    {
+      "questionText": "What is the purpose of the 'defer' attribute in a <script> tag?",
+      "options": ["Loads the script after the HTML is parsed", "Executes the script immediately", "Disables the script", "Caches the script"],
+      "correctAnswer": "Loads the script after the HTML is parsed"
+    },
+    {
+      "questionText": "Which HTTP status code indicates that a request is unauthorized?",
+      "options": ["200 OK", "401 Unauthorized", "404 Not Found", "500 Internal Server Error"],
+      "correctAnswer": "401 Unauthorized"
+    },
+    {
+      "questionText": "In JavaScript, what is a 'closure'?",
+      "options": ["A function that retains access to its outer scope", "A loop that runs indefinitely", "A method to parse JSON", "A way to style elements"],
+      "correctAnswer": "A function that retains access to its outer scope"
+    },
+    {
+      "questionText": "Which HTML element is used to group related form inputs?",
+      "options": ["<div>", "<form>", "<fieldset>", "<section>"],
+      "correctAnswer": "<fieldset>"
+    },
+    {
+      "questionText": "What does the CSS 'grid-template-columns' property define?",
+      "options": ["The number and size of grid columns", "The gap between grid items", "The alignment of grid items", "The height of the grid"],
+      "correctAnswer": "The number and size of grid columns"
+    },
+    {
+      "questionText": "In React, what is the purpose of the 'Context' API?",
+      "options": ["To share data across components without props", "To handle HTTP requests", "To manage component lifecycle", "To animate transitions"],
+      "correctAnswer": "To share data across components without props"
     }
   ]
 }
+

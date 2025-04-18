@@ -74,7 +74,7 @@ app.post('/register', async (req, res) => {
     res.status(201).json({
       message: 'Registration successful',
       userId: result.insertId,
-      username: username
+      username: username 
     });
   } catch (error) {
     console.error('Registration error:', error);
@@ -177,11 +177,22 @@ app.post('/quizzes/create', async (req, res) => {
 
     // Create timestamps for quiz timing
     const nowMS = Date.now();
-    const endTimeMS = nowMS + (600 * 1000); // 10 minutes from now
+    // 10 minutes from now
+    const endTimeMS = nowMS + (600 * 1000); 
+    
+
+    // Get the total number of questions
+    const [countResult] = await connection.query('SELECT COUNT(*) as count FROM questions');
+    const totalQuestions = countResult[0].count;
+
+    // Generate a random offset
+    const randomOffset = Math.floor(Math.random() * (totalQuestions - 10)); 
+
 
     // Get random questions from the global pool
     const [randomQuestions] = await connection.query(
-      'SELECT id FROM questions ORDER BY RAND() LIMIT 10'
+      'SELECT id, question_text, options, correct_answer FROM questions LIMIT 10 OFFSET ?',
+      [randomOffset]
     );
 
     // Extract just the IDs to store in the quiz record

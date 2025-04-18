@@ -67,7 +67,7 @@
   }
   
   .take-quiz-btn {
-    width: 10vw;
+    width: 200px;
     background-color: #5496dd;
     color: white;
     padding: 0.5rem 1rem;
@@ -82,7 +82,7 @@
   }
 
   .create-quiz-btn {
-    width:10vw;
+    width:200px;
     background-color: #61c578;
     color: white;
     padding: 0.5rem 1rem;
@@ -97,7 +97,7 @@
   }
 
   .null-bth {
-    width:10vw;
+    width:200px;
     background-color: #cecece;
     color: rgb(255, 255, 255);
     padding: 0.5rem 1rem;
@@ -112,7 +112,7 @@
   }
 
   .review-quiz-btn {
-    width:10vw;
+    width:200px;
     background-color: #85cdd8;
     color: white;
     padding: 0.5rem 1rem;
@@ -127,7 +127,7 @@
   }
 
   .logout-btn {
-    width:10vw;
+    width:200px;
     margin-left: 10px;
     padding: 10px 20px;
     background-color: #f06a60;

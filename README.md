@@ -1,78 +1,207 @@
-# COMP3421_Project
-This is PolyU 2024-2025 Sem 2 COMP3421 Project - Online Quiz Application with Timer (COMP3421-25-P8)
+# COMP3421 Project (COMP3421-25-P8) 
+This is PolyU 2024-2025 Sem 2 COMP3421 Project - Online Quiz Application with Timer (COMP3421-25-P8) 
+devopled by Chan Chun Hei 23112503d.
 
-Note: Please do not copy or distribute this project without proper authorization. 
+Note: Please do not copy or distribute this project without proper authorization.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## Project Overview
 
-### `npm start`
+This project is an online quiz application with a timer feature. It allows users to register, log in, create quizzes, take quizzes, and review their results. The application is built with a React frontend and an Express backend, with a MySQL database for data storage.
 
-Runs the app in the development mode.\
-Open [http://localhost:3001](http://localhost:3001) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Features
 
-### `npm test`
+- **User Authentication**: Register and log in with a username and password.
+- **Quiz Management**: Create quizzes with random questions from a question pool.
+- **Timer Functionality**: Quizzes have a countdown timer to ensure timely completion.
+- **Quiz Review**: Users can review their answers and see the correct answers after completing a quiz.
+- **Responsive Design**: The application is designed to work on both desktop and mobile devices brower.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## Local Setup
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Prerequisites
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. **Node.js**: Install Node.js (version 16 or higher).
+2. **MySQL**: Install MySQL and set up a database.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Backend Setup
 
-### `npm run eject`
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-repo/COMP3421_Project.git
+   cd COMP3421_Project/backend
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Create a `.env` file in the `backend` directory with the following content:
+   ```env
+   DB_HOST=localhost
+   DB_USER=your_mysql_username
+   DB_PASSWORD=your_mysql_password
+   DB_NAME=quizdb
+   DB_PORT=3306
+   ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Initialize the database using the `init.sql` file:
+   ```bash
+   mysql -u your_mysql_username -p < init.sql
+   ```
+   or run the script `backend/reset_db.sh`
+   ```bash
+   ~/COMP3421_Project/backend$ ./reset_db.sh
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+4. Install backend dependencies:
+   ```bash
+   npm install
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+5. Start the backend server:
+   ```bash
+   npm run
+   ```
 
-## Learn More
+### Frontend Setup
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Navigate to the `frontend` directory:
+   ```bash
+   cd ../frontend
+   ```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. Create a `.env` file in the `frontend` directory with the following content:
+   ```env
+   REACT_APP_API_URL=http://localhost:5000
+   ```
 
-### Code Splitting
+3. Install frontend dependencies:
+   ```bash
+   npm install
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+4. Start the frontend development server:
+   ```bash
+   npm start
+   ```
 
-### Analyzing the Bundle Size
+### While Running
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+1. push the question pool into the database. Sample Question contained in `backend/samplequestion.json`
 
-### Making a Progressive Web App
+    ```javascript
+    const response = await axios.post('https://API-HOST-ADDRESS/quizzes_question_push', {
+      questions: [
+        {
+          question_text: "What is the capital of France?",
+          options: ["Paris", "London", "Berlin", "Madrid"],
+          correctAnswer: "Paris"
+        },
+        {
+          question_text: "What is 2 + 2?",
+          options: ["3", "4", "5", "6"],
+          correctAnswer: "4"
+        },
+        ...
+      ]
+    });
+    ```
+    Reponse
+    ```json
+    {
+        "message": "Questions added successfully"
+    }
+    ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+2. You can check the databse table by run the script `backend/checkdatabase.sh`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+    ```
+    ~/COMP3421_Project/backend$ ./checkdatabase.sh
+    ```
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Online Hosting
 
-### `npm run build` fails to minify
+To host the project online, follow these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Database Hosting
+
+1. Deploy the database to a hosting platform that supports MySQL (e.g., Amazon RDS for MySQL ).
+2. Set and review the database env data for later use.
+2. Ensure the database is accessible from the hosting platform (e.g., allowlist the hosting platform's IP address in your MySQL server).
+
+### Backend Hosting
+
+1. Deploy the backend to a hosting platform that supports Node.js (e.g., Vercel, AWS Lambda, or Heroku).
+2. Set the environment variables (`DB_HOST`, `DB_USER`, `DB_PASSWORD`, `DB_NAME`, `DB_PORT`) in the hosting platform's configuration.
+3. Ensure the database is accessible from the hosting platform (e.g., allowlist the hosting platform's IP address in your MySQL server).
+
+### Frontend Hosting
+
+1. Deploy the frontend to a hosting platform that supports React (e.g., Vercel or Netlify).
+2. Set the `REACT_APP_API_URL` environment variable to the backend's URL.
+
+### Data Configtion
+
+---
+
+## Testing
+
+### Manual Testing for API using frontend
+
+1. **Register**: Create a new user account.
+2. **Login**: Log in with the registered account.
+3. **Create Quiz**: Create a new quiz and verify that it appears in the quiz list.
+4. **Take Quiz**: Start a quiz, answer the questions, and submit the quiz.
+5. **Review Quiz**: Review the quiz results and verify the correct answers.
+
+Or you can using some API call techqiue like `Postman` or `Insomnia`
 
 
-`sudo mysql -u root -p -e "SHOW DATABASES;"`
+---
 
-#data time challenage
+## Troubleshooting
 
-#countdown challenage.
+1. **Database Connection Issues**:
+   - Ensure the database credentials in the `.env` file are correct.
+   - Verify that the MySQL server is running and accessible.
+
+2. **Frontend Not Connecting to Backend**:
+   - Check the `REACT_APP_API_URL` value in the frontend `.env` file.
+   - Ensure the backend server is running and accessible.
+   - Check the error code on the brower console
+
+3. **Hosting Issues**:
+   - Verify that the environment variables are correctly set in the hosting platform.
+   - Check the hosting platform's logs for errors.
+
+---
+
+## Folder Structure
+
+```
+COMP3421_Project/
+├── backend/
+│   ├── api/                # Backend API code
+│   ├── init.sql            # Database schema
+│   ├── .env                # Backend environment variables
+│   ├── package.json        # Backend dependencies
+│   └── ...                 # Other backend files
+├── frontend/
+│   ├── src/                # Frontend source code
+│   ├── public/             # Public assets (like app icon)
+│   ├── .env                # Frontend environment variables
+│   ├── package.json        # Frontend dependencies
+│   └── ...                 # Other frontend files
+└── README.md               # Project documentation
+```
+
+---
+
+## License
+
+This project is for educational purposes only and is not licensed for commercial use.

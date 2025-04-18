@@ -43,9 +43,11 @@ const Login = () => {
         localStorage.setItem('userId', response.data.userId);
         localStorage.setItem('userName', response.data.username);
         navigate('/quizlist');
+      } else {
+        setError('Invalid username or password');
       }
     } catch (err) {
-      setError('Invalid username or password');
+      setError('Login failed');
     }
   };
 
