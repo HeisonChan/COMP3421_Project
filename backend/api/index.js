@@ -191,8 +191,7 @@ app.post('/quizzes/create', async (req, res) => {
 
     // Get random questions from the global pool
     const [randomQuestions] = await connection.query(
-      'SELECT id, question_text, options, correct_answer FROM questions LIMIT 10 OFFSET ?',
-      [randomOffset]
+      'SELECT id, question_text, options, correct_answer FROM questions WHERE id BETWEEN 61 AND 260 ORDER BY RAND() LIMIT 10'
     );
 
     // Extract just the IDs to store in the quiz record

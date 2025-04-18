@@ -399,7 +399,1208 @@
       "questionText": "In React, what is the purpose of the 'Context' API?",
       "options": ["To share data across components without props", "To handle HTTP requests", "To manage component lifecycle", "To animate transitions"],
       "correctAnswer": "To share data across components without props"
+    },
+    {
+      "questionText": "What is the primary purpose of CSS as described in the document?",
+      "options": [
+        "To add interactivity to web pages",
+        "To describe the content of a web page",
+        "To separate presentation from HTML content",
+        "To replace JavaScript functionality"
+      ],
+      "correctAnswer": "To separate presentation from HTML content"
+    },
+    {
+      "questionText": "Before CSS, how did designers primarily control the design of web pages?",
+      "options": [
+        "Using JavaScript",
+        "Using presentation tags like <font> and <table>",
+        "Using external style sheets",
+        "Using Flexbox layouts"
+      ],
+      "correctAnswer": "Using presentation tags like <font> and <table>"
+    },
+    {
+      "questionText": "What problem did CSS solve for web developers according to the PDF?",
+      "options": [
+        "Slow internet speeds",
+        "The need to add styles to every page individually",
+        "Lack of browser support",
+        "Complexity of HTML syntax"
+      ],
+      "correctAnswer": "The need to add styles to every page individually"
+    },
+    {
+      "questionText": "Which CSS property value keeps an element in its normal position unless offset?",
+      "options": [
+        "position: absolute",
+        "position: relative",
+        "position: fixed",
+        "position: sticky"
+      ],
+      "correctAnswer": "position: relative"
+    },
+    {
+      "questionText": "An element with 'position: fixed' is positioned relative to what?",
+      "options": [
+        "Its nearest positioned ancestor",
+        "The document body",
+        "The viewport",
+        "The parent element"
+      ],
+      "correctAnswer": "The viewport"
+    },
+    {
+      "questionText": "What happens to an element with 'position: absolute' if it has no positioned ancestors?",
+      "options": [
+        "It stays in its normal flow",
+        "It is positioned relative to the viewport",
+        "It is positioned relative to the document body",
+        "It becomes invisible"
+      ],
+      "correctAnswer": "It is positioned relative to the document body"
+    },
+    {
+      "questionText": "Which property determines the stacking order of overlapping elements?",
+      "options": [
+        "overflow",
+        "z-index",
+        "display",
+        "opacity"
+      ],
+      "correctAnswer": "z-index"
+    },
+    {
+      "questionText": "What does the 'overflow: hidden' value do?",
+      "options": [
+        "Adds a scrollbar to the element",
+        "Clips the content and hides the excess",
+        "Makes the content visible outside the box",
+        "Adjusts the element’s size to fit the content"
+      ],
+      "correctAnswer": "Clips the content and hides the excess"
+    },
+    {
+      "questionText": "How can web designers use custom fonts not installed on a user’s computer?",
+      "options": [
+        "Using the 'font-family' property",
+        "Using the '@font-face' rule",
+        "Using the 'font-style' property",
+        "Using the 'display' property"
+      ],
+      "correctAnswer": "Using the '@font-face' rule"
+    },
+    {
+      "questionText": "What is the default 'display' value for a <span> element?",
+      "options": [
+        "block",
+        "inline",
+        "flex",
+        "none"
+      ],
+      "correctAnswer": "inline"
+    },
+    {
+      "questionText": "How does 'visibility: hidden' differ from 'display: none'?",
+      "options": [
+        "It makes the element transparent",
+        "It hides the element but preserves its space",
+        "It removes the element completely",
+        "It only works on block elements"
+      ],
+      "correctAnswer": "It hides the element but preserves its space"
+    },
+    {
+      "questionText": "What value range does the 'opacity' property accept?",
+      "options": [
+        "0 to 100",
+        "0.0 to 1.0",
+        "-1 to 1",
+        "1 to 10"
+      ],
+      "correctAnswer": "0.0 to 1.0"
+    },
+    {
+      "questionText": "Why are image sprites used in CSS?",
+      "options": [
+        "To improve image quality",
+        "To reduce server requests and save bandwidth",
+        "To animate images",
+        "To increase page load time"
+      ],
+      "correctAnswer": "To reduce server requests and save bandwidth"
+    },
+    {
+      "questionText": "Which CSS property is used to increment a counter?",
+      "options": [
+        "counter-reset",
+        "counter-increment",
+        "content",
+        "display"
+      ],
+      "correctAnswer": "counter-increment"
+    },
+    {
+      "questionText": "What does the 'flex-direction' property in Flexbox control?",
+      "options": [
+        "The alignment of flex items",
+        "The wrapping of flex items",
+        "The stacking direction of flex items",
+        "The spacing between flex items"
+      ],
+      "correctAnswer": "The stacking direction of flex items"
+    },
+    {
+      "questionText": "Where should CSS variables be declared for global scope?",
+      "options": [
+        "In any selector",
+        "In the ':root' or 'body' selector",
+        "In a 'div' element",
+        "In a media query"
+      ],
+      "correctAnswer": "In the ':root' or 'body' selector"
+    },
+    {
+      "questionText": "What can media queries check to apply different styles?",
+      "options": [
+        "Viewport width and height",
+        "Browser version",
+        "HTML tag names",
+        "JavaScript availability"
+      ],
+      "correctAnswer": "Viewport width and height"
+    },
+    {
+      "questionText": "Which property allows an image to be used as an element’s border?",
+      "options": [
+        "border-style",
+        "border-image",
+        "background-image",
+        "border-radius"
+      ],
+      "correctAnswer": "border-image"
+    },
+    {
+      "questionText": "What does the 'transform' property enable in CSS?",
+      "options": [
+        "Changing an element’s color",
+        "Moving, rotating, scaling, or skewing an element",
+        "Adding smooth transitions",
+        "Controlling visibility"
+      ],
+      "correctAnswer": "Moving, rotating, scaling, or skewing an element"
+    },
+    {
+      "questionText": "Which CSS feature allows property values to change smoothly over time?",
+      "options": [
+        "Animations",
+        "Transitions",
+        "Transforms",
+        "Media Queries"
+      ],
+      "correctAnswer": "Transitions"
+    },
+    {
+      "questionText": "What does PHP stand for?",
+      "options": [
+        "Personal Home Page",
+        "PHP: Hypertext Preprocessor",
+        "Private Hypertext Processor",
+        "Public Hosting Platform"
+      ],
+      "correctAnswer": "PHP: Hypertext Preprocessor"
+    },
+    {
+      "questionText": "Which of the following is NOT a capability of PHP?",
+      "options": [
+        "Generating dynamic page content",
+        "Creating and manipulating files on the server",
+        "Directly modifying the client’s browser settings",
+        "Collecting form data"
+      ],
+      "correctAnswer": "Directly modifying the client’s browser settings"
+    },
+    {
+      "questionText": "What is the correct way to start a PHP script?",
+      "options": [
+        "<php>",
+        "<?php",
+        "<?",
+        "<script>"
+      ],
+      "correctAnswer": "<?php"
+    },
+    {
+      "questionText": "Which symbol is used to denote a variable in PHP?",
+      "options": [
+        "@",
+        "$",
+        "&",
+        "%"
+      ],
+      "correctAnswer": "$"
+    },
+    {
+      "questionText": "What is the scope of a variable declared within a function in PHP?",
+      "options": [
+        "Global",
+        "Local",
+        "Static",
+        "Public"
+      ],
+      "correctAnswer": "Local"
+    },
+    {
+      "questionText": "Which PHP statement is used to output data to the screen?",
+      "options": [
+        "display",
+        "print",
+        "echo",
+        "Both print and echo"
+      ],
+      "correctAnswer": "Both print and echo"
+    },
+    {
+      "questionText": "Which data type in PHP is used to store a sequence of characters?",
+      "options": [
+        "Integer",
+        "Float",
+        "String",
+        "Boolean"
+      ],
+      "correctAnswer": "String"
+    },
+    {
+      "questionText": "What is the purpose of the 'global' keyword in PHP?",
+      "options": [
+        "To declare a variable as static",
+        "To access a global variable from within a function",
+        "To create a new global variable",
+        "To delete a global variable"
+      ],
+      "correctAnswer": "To access a global variable from within a function"
+    },
+    {
+      "questionText": "Which operator is used for concatenation in PHP?",
+      "options": [
+        "+",
+        ".",
+        "&",
+        "||"
+      ],
+      "correctAnswer": "."
+    },
+    {
+      "questionText": "What is the correct way to define a constant in PHP?",
+      "options": [
+        "const MY_CONST = 'value';",
+        "define('MY_CONST', 'value');",
+        "$MY_CONST = 'value';",
+        "constant MY_CONST = 'value';"
+      ],
+      "correctAnswer": "define('MY_CONST', 'value');"
+    },
+    {
+      "questionText": "Which loop in PHP is guaranteed to execute at least once?",
+      "options": [
+        "for",
+        "while",
+        "do...while",
+        "foreach"
+      ],
+      "correctAnswer": "do...while"
+    },
+    {
+      "questionText": "What is the purpose of the 'foreach' loop in PHP?",
+      "options": [
+        "To loop through a block of code a specified number of times",
+        "To loop through each element in an array",
+        "To loop while a condition is true",
+        "To loop until a condition is false"
+      ],
+      "correctAnswer": "To loop through each element in an array"
+    },
+    {
+      "questionText": "Which function is used to check if a variable is an integer in PHP?",
+      "options": [
+        "is_int()",
+        "is_integer()",
+        "is_long()",
+        "All of the above"
+      ],
+      "correctAnswer": "All of the above"
+    },
+    {
+      "questionText": "What does the '===' operator check in PHP?",
+      "options": [
+        "Equality of values",
+        "Equality of values and types",
+        "Inequality of values",
+        "Inequality of values and types"
+      ],
+      "correctAnswer": "Equality of values and types"
+    },
+    {
+      "questionText": "Which superglobal variable is used to collect form data sent with the POST method?",
+      "options": [
+        "$_GET",
+        "$_POST",
+        "$_REQUEST",
+        "$_SESSION"
+      ],
+      "correctAnswer": "$_POST"
+    },
+    {
+      "questionText": "What is the purpose of the 'session_start()' function in PHP?",
+      "options": [
+        "To end a session",
+        "To start a new session or resume an existing one",
+        "To destroy all session variables",
+        "To set a session variable"
+      ],
+      "correctAnswer": "To start a new session or resume an existing one"
+    },
+    {
+      "questionText": "Which PHP function is used to sort an array in ascending order?",
+      "options": [
+        "sort()",
+        "rsort()",
+        "asort()",
+        "ksort()"
+      ],
+      "correctAnswer": "sort()"
+    },
+    {
+      "questionText": "What is the default index of the first element in an indexed array in PHP?",
+      "options": [
+        "1",
+        "0",
+        "-1",
+        "None"
+      ],
+      "correctAnswer": "0"
+    },
+    {
+      "questionText": "Which of the following is NOT a type of array in PHP?",
+      "options": [
+        "Indexed arrays",
+        "Associative arrays",
+        "Multidimensional arrays",
+        "Sequential arrays"
+      ],
+      "correctAnswer": "Sequential arrays"
+    },
+    {
+      "questionText": "What does the 'var_dump()' function do in PHP?",
+      "options": [
+        "Outputs a human-readable representation of a variable",
+        "Checks if a variable is set",
+        "Converts a variable to a string",
+        "Deletes a variable"
+      ],
+      "correctAnswer": "Outputs a human-readable representation of a variable"
+    },
+    {
+      "questionText": "What is the primary purpose of XML as described in the document?",
+      "options": [
+        "To add interactivity to web pages",
+        "To describe the content of a web page",
+        "To separate presentation from HTML content",
+        "To replace JavaScript functionality"
+      ],
+      "correctAnswer": "To separate presentation from HTML content"
+    },
+    {
+      "questionText": "Which of the following is NOT a capability of AJAX?",
+      "options": [
+        "Generating dynamic page content",
+        "Creating and manipulating files on the server",
+        "Directly modifying the client’s browser settings",
+        "Collecting form data"
+      ],
+      "correctAnswer": "Directly modifying the client’s browser settings"
+    },
+    {
+      "questionText": "What is the correct way to start a jQuery script?",
+      "options": [
+        "<jquery>",
+        "$(document).ready(function(){",
+        "<script>",
+        "<js>"
+      ],
+      "correctAnswer": "$(document).ready(function(){"
+    },
+    {
+      "questionText": "Which symbol is used to denote a jQuery selector?",
+      "options": [
+        "@",
+        "$",
+        "&",
+        "%"
+      ],
+      "correctAnswer": "$"
+    },
+    {
+      "questionText": "What is the scope of a variable declared within a function in JavaScript?",
+      "options": [
+        "Global",
+        "Local",
+        "Static",
+        "Public"
+      ],
+      "correctAnswer": "Local"
+    },
+    {
+      "questionText": "Which jQuery method is used to hide an element?",
+      "options": [
+        "hide()",
+        "display()",
+        "show()",
+        "toggle()"
+      ],
+      "correctAnswer": "hide()"
+    },
+    {
+      "questionText": "What is the purpose of the 'XMLHttpRequest' object in AJAX?",
+      "options": [
+        "To send and receive data between a web browser and a web server",
+        "To validate user input on the client side",
+        "To store data locally in the browser",
+        "To enhance the styling of web pages"
+      ],
+      "correctAnswer": "To send and receive data between a web browser and a web server"
+    },
+    {
+      "questionText": "Which of the following is a benefit of using JSON over XML?",
+      "options": [
+        "JSON is more human-readable",
+        "JSON supports schemas",
+        "JSON is better for complex data structures",
+        "JSON is faster to parse"
+      ],
+      "correctAnswer": "JSON is faster to parse"
+    },
+    {
+      "questionText": "What is the purpose of the 'RESTful API' design principles?",
+      "options": [
+        "To provide a standardized way to design networked applications",
+        "To create a new programming language",
+        "To replace JavaScript functionality",
+        "To enhance the styling of web pages"
+      ],
+      "correctAnswer": "To provide a standardized way to design networked applications"
+    },
+    {
+      "questionText": "Which of the following is NOT a type of HTTP method used in RESTful APIs?",
+      "options": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE"
+      ],
+      "correctAnswer": "DELETE"
+    },
+    {
+      "questionText": "What is the purpose of the 'MVC' design pattern?",
+      "options": [
+        "To separate the model, view, and controller components of an application",
+        "To create a new programming language",
+        "To replace JavaScript functionality",
+        "To enhance the styling of web pages"
+      ],
+      "correctAnswer": "To separate the model, view, and controller components of an application"
+    },
+    {
+      "questionText": "Which of the following is a benefit of using the 'MVC' design pattern?",
+      "options": [
+        "Easy code maintenance",
+        "Rapid application development",
+        "Reusing code",
+        "All of the above"
+      ],
+      "correctAnswer": "All of the above"
+    },
+    {
+      "questionText": "What is the purpose of the 'Document Type Definition' (DTD) in XML?",
+      "options": [
+        "To define the structure and validity of an XML document",
+        "To create a new programming language",
+        "To replace JavaScript functionality",
+        "To enhance the styling of web pages"
+      ],
+      "correctAnswer": "To define the structure and validity of an XML document"
+    },
+    {
+      "questionText": "Which of the following is NOT a type of XML element content type?",
+      "options": [
+        "Empty",
+        "Any",
+        "Element",
+        "Mixed"
+      ],
+      "correctAnswer": "Mixed"
+    },
+    {
+      "questionText": "What is the purpose of the 'XML Namespace'?",
+      "options": [
+        "To provide a way to avoid element name conflicts",
+        "To create a new programming language",
+        "To replace JavaScript functionality",
+        "To enhance the styling of web pages"
+      ],
+      "correctAnswer": "To provide a way to avoid element name conflicts"
+    },
+    {
+      "questionText": "Which of the following is a benefit of using AJAX in web development?",
+      "options": [
+        "Faster page loading",
+        "More interactive user experience",
+        "Reduced server load",
+        "All of the above"
+      ],
+      "correctAnswer": "All of the above"
+    },
+    {
+      "questionText": "What is the purpose of the 'jQuery' library?",
+      "options": [
+        "To simplify JavaScript programming",
+        "To create a new programming language",
+        "To replace JavaScript functionality",
+        "To enhance the styling of web pages"
+      ],
+      "correctAnswer": "To simplify JavaScript programming"
+    },
+    {
+      "questionText": "Which of the following is NOT a type of jQuery selector?",
+      "options": [
+        "Element",
+        "Class",
+        "ID",
+        "Attribute"
+      ],
+      "correctAnswer": "Attribute"
+    },
+    {
+      "questionText": "What is the purpose of the 'RESTful API' design principles in web development?",
+      "options": [
+        "To provide a standardized way to design networked applications",
+        "To create a new programming language",
+        "To replace JavaScript functionality",
+        "To enhance the styling of web pages"
+      ],
+      "correctAnswer": "To provide a standardized way to design networked applications"
+    },
+    {
+      "questionText": "Which of the following is a benefit of using the 'MVC' design pattern in web development?",
+      "options": [
+        "Easy code maintenance",
+        "Rapid application development",
+        "Reusing code",
+        "All of the above"
+      ],
+      "correctAnswer": "All of the above"
+    },
+    {
+      "questionText": "What is the primary purpose of XML?",
+      "options": [
+        "To describe data",
+        "To display data",
+        "To store data",
+        "To transport data"
+      ],
+      "correctAnswer": "To describe data"
+    },
+    {
+      "questionText": "What is the difference between a well-formed and a valid XML document?",
+      "options": [
+        "A well-formed document follows the basic syntax rules, while a valid document conforms to a DTD or schema.",
+        "A well-formed document has a DTD, while a valid document does not.",
+        "A well-formed document is written in XML, while a valid document is written in HTML.",
+        "There is no difference; they are synonymous."
+      ],
+      "correctAnswer": "A well-formed document follows the basic syntax rules, while a valid document conforms to a DTD or schema."
+    },
+    {
+      "questionText": "What is the purpose of an XML namespace?",
+      "options": [
+        "To avoid element name conflicts",
+        "To define the structure of the document",
+        "To specify the data types of elements",
+        "To link to external resources"
+      ],
+      "correctAnswer": "To avoid element name conflicts"
+    },
+    {
+      "questionText": "What is AJAX?",
+      "options": [
+        "A programming language",
+        "A web development technique for creating asynchronous web applications",
+        "A database management system",
+        "A server-side scripting language"
+      ],
+      "correctAnswer": "A web development technique for creating asynchronous web applications"
+    },
+    {
+      "questionText": "What is the role of the XMLHttpRequest object in AJAX?",
+      "options": [
+        "To send HTTP requests to the server",
+        "To parse XML data",
+        "To manipulate the DOM",
+        "To handle user input"
+      ],
+      "correctAnswer": "To send HTTP requests to the server"
+    },
+    {
+      "questionText": "How do you connect to a MySQL database in PHP?",
+      "options": [
+        "Using the mysql_connect() function",
+        "Using the mysqli_connect() function",
+        "Using the pdo_connect() function",
+        "Using the db_connect() function"
+      ],
+      "correctAnswer": "Using the mysqli_connect() function"
+    },
+    {
+      "questionText": "What is the difference between a SQL query and a prepared statement?",
+      "options": [
+        "A SQL query is executed directly, while a prepared statement is compiled and executed separately.",
+        "A SQL query is used for SELECT statements, while a prepared statement is used for INSERT, UPDATE, and DELETE statements.",
+        "A SQL query is written in SQL, while a prepared statement is written in PHP.",
+        "There is no difference; they are the same."
+      ],
+      "correctAnswer": "A SQL query is executed directly, while a prepared statement is compiled and executed separately."
+    },
+    {
+      "questionText": "What is a RESTful API?",
+      "options": [
+        "An API that follows the principles of Representational State Transfer",
+        "An API that uses XML for data exchange",
+        "An API that is hosted on a remote server",
+        "An API that requires authentication"
+      ],
+      "correctAnswer": "An API that follows the principles of Representational State Transfer"
+    },
+    {
+      "questionText": "What is the purpose of the HTTP GET method in a RESTful API?",
+      "options": [
+        "To retrieve data from the server",
+        "To create new data on the server",
+        "To update existing data on the server",
+        "To delete data from the server"
+      ],
+      "correctAnswer": "To retrieve data from the server"
+    },
+    {
+      "questionText": "What is JSON?",
+      "options": [
+        "A lightweight data interchange format",
+        "A programming language",
+        "A database management system",
+        "A web development framework"
+      ],
+      "correctAnswer": "A lightweight data interchange format"
+    },
+    {
+      "questionText": "What is jQuery?",
+      "options": [
+        "A JavaScript library",
+        "A CSS framework",
+        "A server-side scripting language",
+        "A database management system"
+      ],
+      "correctAnswer": "A JavaScript library"
+    },
+    {
+      "questionText": "How do you select an element with the ID 'myId' using jQuery?",
+      "options": [
+        "$('#myId')",
+        "$('.myId')",
+        "$('myId')",
+        "$('id=myId')"
+      ],
+      "correctAnswer": "$('#myId')"
+    },
+    {
+      "questionText": "What is the purpose of the $(document).ready() function in jQuery?",
+      "options": [
+        "To execute code when the document is fully loaded",
+        "To select the document element",
+        "To create a new document",
+        "To manipulate the document's content"
+      ],
+      "correctAnswer": "To execute code when the document is fully loaded"
+    },
+    {
+      "questionText": "What is the difference between the hide() and show() methods in jQuery?",
+      "options": [
+        "hide() makes an element invisible, while show() makes it visible",
+        "hide() removes an element from the DOM, while show() adds it back",
+        "hide() animates an element's disappearance, while show() animates its appearance",
+        "There is no difference; they are synonymous"
+      ],
+      "correctAnswer": "hide() makes an element invisible, while show() makes it visible"
+    },
+    {
+      "questionText": "How do you make an AJAX request using jQuery?",
+      "options": [
+        "Using the $.ajax() method",
+        "Using the $.get() method",
+        "Using the $.post() method",
+        "All of the above"
+      ],
+      "correctAnswer": "All of the above"
+    },
+    {
+      "questionText": "What is an API?",
+      "options": [
+        "A set of rules and protocols for building and interacting with software applications",
+        "A programming language",
+        "A database management system",
+        "A web development framework"
+      ],
+      "correctAnswer": "A set of rules and protocols for building and interacting with software applications"
+    },
+    {
+      "questionText": "What is the difference between a RESTful API and a SOAP API?",
+      "options": [
+        "RESTful APIs use HTTP methods, while SOAP APIs use XML messages",
+        "RESTful APIs are stateless, while SOAP APIs maintain state",
+        "RESTful APIs are more lightweight than SOAP APIs",
+        "All of the above"
+      ],
+      "correctAnswer": "All of the above"
+    },
+    {
+      "questionText": "What is JWT?",
+      "options": [
+        "A compact, URL-safe means of representing claims to be transferred between two parties",
+        "A programming language",
+        "A database management system",
+        "A web development framework"
+      ],
+      "correctAnswer": "A compact, URL-safe means of representing claims to be transferred between two parties"
+    },
+    {
+      "questionText": "How do you secure a RESTful API?",
+      "options": [
+        "Using authentication and authorization mechanisms",
+        "Using HTTPS",
+        "Using input validation",
+        "All of the above"
+      ],
+      "correctAnswer": "All of the above"
+    },
+    {
+      "questionText": "What is the purpose of the HTTP status codes in a RESTful API?",
+      "options": [
+        "To indicate the result of the request",
+        "To specify the content type of the response",
+        "To provide additional metadata about the response",
+        "To handle errors and exceptions"
+      ],
+      "correctAnswer": "To indicate the result of the request"
+    },
+    {
+      "questionText": "What is the MVC design pattern?",
+      "options": [
+        "A software architectural pattern that separates an application into three interconnected components: Model, View, and Controller",
+        "A programming language",
+        "A database management system",
+        "A web development framework"
+      ],
+      "correctAnswer": "A software architectural pattern that separates an application into three interconnected components: Model, View, and Controller"
+    },
+    {
+      "questionText": "What is the role of the Model in MVC?",
+      "options": [
+        "To represent the data and business logic of the application",
+        "To handle user input and interactions",
+        "To render the user interface",
+        "To manage the application's state"
+      ],
+      "correctAnswer": "To represent the data and business logic of the application"
+    },
+    {
+      "questionText": "What is the role of the View in MVC?",
+      "options": [
+        "To represent the data and business logic of the application",
+        "To handle user input and interactions",
+        "To render the user interface",
+        "To manage the application's state"
+      ],
+      "correctAnswer": "To render the user interface"
+    },
+    {
+      "questionText": "What is the role of the Controller in MVC?",
+      "options": [
+        "To represent the data and business logic of the application",
+        "To handle user input and interactions",
+        "To render the user interface",
+        "To manage the application's state"
+      ],
+      "correctAnswer": "To handle user input and interactions"
+    },
+    {
+      "questionText": "What are the benefits of using the MVC design pattern?",
+      "options": [
+        "Separation of concerns",
+        "Easier maintenance and testing",
+        "Improved scalability",
+        "All of the above"
+      ],
+      "correctAnswer": "All of the above"
+    },
+    {
+      "questionText": "What is the purpose of the XML prolog?",
+      "options": [
+        "To specify the XML version and encoding",
+        "To define the document's structure",
+        "To include external resources",
+        "To add comments to the document"
+      ],
+      "correctAnswer": "To specify the XML version and encoding"
+    },
+    {
+      "questionText": "How do you define an element in an XML DTD?",
+      "options": [
+        "Using the <!ELEMENT> tag",
+        "Using the <!ATTLIST> tag",
+        "Using the <!ENTITY> tag",
+        "Using the <!DOCTYPE> tag"
+      ],
+      "correctAnswer": "Using the <!ELEMENT> tag"
+    },
+    {
+      "questionText": "What is the difference between internal and external DTDs?",
+      "options": [
+        "Internal DTDs are defined within the XML document, while external DTDs are defined in a separate file",
+        "Internal DTDs are used for validation, while external DTDs are used for styling",
+        "Internal DTDs are written in XML, while external DTDs are written in HTML",
+        "There is no difference; they are the same"
+      ],
+      "correctAnswer": "Internal DTDs are defined within the XML document, while external DTDs are defined in a separate file"
+    },
+    {
+      "questionText": "What is the purpose of the XMLHttpRequest object's readyState property?",
+      "options": [
+        "To indicate the current state of the request",
+        "To specify the HTTP method to use",
+        "To set the request headers",
+        "To handle the response data"
+      ],
+      "correctAnswer": "To indicate the current state of the request"
+    },
+    {
+      "questionText": "How do you handle the response from an AJAX request?",
+      "options": [
+        "By checking the readyState and status properties of the XMLHttpRequest object",
+        "By using the onreadystatechange event handler",
+        "By parsing the responseText or responseXML properties",
+        "All of the above"
+      ],
+      "correctAnswer": "All of the above"
+    },
+    {
+      "questionText": "What is the difference between mysql and mysqli in PHP?",
+      "options": [
+        "mysql is the old extension, while mysqli is the improved extension with support for prepared statements and object-oriented interface",
+        "mysql is for MySQL databases, while mysqli is for MariaDB databases",
+        "mysql is a function, while mysqli is a class",
+        "There is no difference; they are the same"
+      ],
+      "correctAnswer": "mysql is the old extension, while mysqli is the improved extension with support for prepared statements and object-oriented interface"
+    },
+    {
+      "questionText": "How do you prevent SQL injection in PHP?",
+      "options": [
+        "By using prepared statements",
+        "By escaping user input",
+        "By validating user input",
+        "All of the above"
+      ],
+      "correctAnswer": "All of the above"
+    },
+    {
+      "questionText": "What is the purpose of the PDO extension in PHP?",
+      "options": [
+        "To provide a consistent interface for accessing different databases",
+        "To improve performance of database queries",
+        "To add support for NoSQL databases",
+        "To handle database transactions"
+      ],
+      "correctAnswer": "To provide a consistent interface for accessing different databases"
+    },
+    {
+      "questionText": "How do you perform a SELECT query in PHP using mysqli?",
+      "options": [
+        "Using the query() method",
+        "Using the prepare() method",
+        "Using the execute() method",
+        "Using the fetch() method"
+      ],
+      "correctAnswer": "Using the query() method"
+    },
+    {
+      "questionText": "What is the difference between GET and POST requests in HTTP?",
+      "options": [
+        "GET requests are used to retrieve data, while POST requests are used to send data to the server",
+        "GET requests are secure, while POST requests are not",
+        "GET requests can be bookmarked, while POST requests cannot",
+        "All of the above"
+      ],
+      "correctAnswer": "GET requests are used to retrieve data, while POST requests are used to send data to the server"
+    },
+    {
+      "questionText": "How do you add a class to an element using jQuery?",
+      "options": [
+        "Using the addClass() method",
+        "Using the css() method",
+        "Using the attr() method",
+        "Using the html() method"
+      ],
+      "correctAnswer": "Using the addClass() method"
+    },
+    {
+      "questionText": "What is the purpose of the $.ajax() method in jQuery?",
+      "options": [
+        "To perform an AJAX request",
+        "To select elements from the DOM",
+        "To manipulate the CSS of elements",
+        "To handle events"
+      ],
+      "correctAnswer": "To perform an AJAX request"
+    },
+    {
+      "questionText": "How do you stop event propagation in jQuery?",
+      "options": [
+        "Using the stopPropagation() method",
+        "Using the preventDefault() method",
+        "Using the return false statement",
+        "All of the above"
+      ],
+      "correctAnswer": "All of the above"
+    },
+    {
+      "questionText": "What is the difference between the on() and bind() methods in jQuery?",
+      "options": [
+        "on() is used for attaching event handlers to elements, while bind() is used for binding data to elements",
+        "on() is the preferred method for attaching event handlers, while bind() is deprecated",
+        "on() can attach multiple event handlers, while bind() can only attach one",
+        "There is no difference; they are the same"
+      ],
+      "correctAnswer": "on() is the preferred method for attaching event handlers, while bind() is deprecated"
+    },
+    {
+      "questionText": "How do you animate an element using jQuery?",
+      "options": [
+        "Using the animate() method",
+        "Using the css() method",
+        "Using the fadeIn() and fadeOut() methods",
+        "All of the above"
+      ],
+      "correctAnswer": "All of the above"
+    },
+    {
+      "questionText": "What is the purpose of the HTTP headers in a RESTful API?",
+      "options": [
+        "To provide metadata about the request or response",
+        "To specify the content type of the request or response",
+        "To handle authentication and authorization",
+        "All of the above"
+      ],
+      "correctAnswer": "All of the above"
+    },
+    {
+      "questionText": "How do you handle errors in a RESTful API?",
+      "options": [
+        "By returning appropriate HTTP status codes",
+        "By including error messages in the response body",
+        "By logging errors on the server",
+        "All of the above"
+      ],
+      "correctAnswer": "All of the above"
+    },
+    {
+      "questionText": "What is the difference between authentication and authorization?",
+      "options": [
+        "Authentication verifies the identity of the user, while authorization determines what resources the user can access",
+        "Authentication is the process of logging in, while authorization is the process of logging out",
+        "Authentication is done on the client side, while authorization is done on the server side",
+        "There is no difference; they are the same"
+      ],
+      "correctAnswer": "Authentication verifies the identity of the user, while authorization determines what resources the user can access"
+    },
+    {
+      "questionText": "How do you implement pagination in a RESTful API?",
+      "options": [
+        "By using query parameters to specify the page number and size",
+        "By including links to the next and previous pages in the response",
+        "By limiting the number of results returned in each response",
+        "All of the above"
+      ],
+      "correctAnswer": "All of the above"
+    },
+    {
+      "questionText": "What is the purpose of the CORS (Cross-Origin Resource Sharing) mechanism?",
+      "options": [
+        "To allow or restrict cross-origin requests",
+        "To improve the performance of API requests",
+        "To handle authentication and authorization",
+        "To compress the response data"
+      ],
+      "correctAnswer": "To allow or restrict cross-origin requests"
+    },
+    {
+      "questionText": "What is the difference between the MVC and MVVM design patterns?",
+      "options": [
+        "MVC separates the application into Model, View, and Controller, while MVVM separates it into Model, View, and ViewModel",
+        "MVC is used for web applications, while MVVM is used for desktop applications",
+        "MVC is a three-tier architecture, while MVVM is a two-tier architecture",
+        "There is no difference; they are the same"
+      ],
+      "correctAnswer": "MVC separates the application into Model, View, and Controller, while MVVM separates it into Model, View, and ViewModel"
+    },
+    {
+      "questionText": "How does the Controller interact with the Model and View in MVC?",
+      "options": [
+        "The Controller receives user input, updates the Model, and selects the appropriate View to display",
+        "The Controller directly manipulates the View and Model",
+        "The Controller is responsible for rendering the View",
+        "The Controller is not part of the MVC pattern"
+      ],
+      "correctAnswer": "The Controller receives user input, updates the Model, and selects the appropriate View to display"
+    },
+    {
+      "questionText": "What is the benefit of using dependency injection in MVC?",
+      "options": [
+        "It allows for loose coupling between components",
+        "It improves the performance of the application",
+        "It simplifies the testing process",
+        "All of the above"
+      ],
+      "correctAnswer": "All of the above"
+    },
+    {
+      "questionText": "How do you handle routing in an MVC application?",
+      "options": [
+        "By mapping URLs to specific controllers and actions",
+        "By using a routing table",
+        "By configuring the web server",
+        "All of the above"
+      ],
+      "correctAnswer": "All of the above"
+    },
+    {
+      "questionText": "What is the role of the View in an MVC application?",
+      "options": [
+        "To present the data to the user",
+        "To handle user input",
+        "To manage the application's state",
+        "To perform business logic operations"
+      ],
+      "correctAnswer": "To present the data to the user"
+    },
+    {
+      "questionText": "Which XML component is used to declare an attribute?",
+      "options": [
+        "<!ATTLIST>",
+        "<!ELEMENT>",
+        "<!ENTITY>",
+        "<!DOCTYPE>"
+      ],
+      "correctAnswer": "<!ATTLIST>"
+    },
+    {
+      "questionText": "What does the status code 200 signify in an AJAX response?",
+      "options": [
+        "The request was successful",
+        "The request was redirected",
+        "The request resulted in an error",
+        "The request requires authentication"
+      ],
+      "correctAnswer": "The request was successful"
+    },
+    {
+      "questionText": "In PHP, what function retrieves the result of a mysqli query as an associative array?",
+      "options": [
+        "fetch_assoc()",
+        "fetch_array()",
+        "fetch_row()",
+        "fetch_object()"
+      ],
+      "correctAnswer": "fetch_assoc()"
+    },
+    {
+      "questionText": "Which jQuery method removes an element from the DOM?",
+      "options": [
+        "remove()",
+        "hide()",
+        "detach()",
+        "empty()"
+      ],
+      "correctAnswer": "remove()"
+    },
+    {
+      "questionText": "What HTTP method is typically used to update resources in a RESTful API?",
+      "options": [
+        "PUT",
+        "GET",
+        "POST",
+        "DELETE"
+      ],
+      "correctAnswer": "PUT"
+    },
+    {
+      "questionText": "In MVC, which component is responsible for validating user input?",
+      "options": [
+        "Controller",
+        "Model",
+        "View",
+        "All of the above"
+      ],
+      "correctAnswer": "Controller"
+    },
+    {
+      "questionText": "What is the purpose of the XML Schema Definition (XSD)?",
+      "options": [
+        "To define the structure and data types for XML documents",
+        "To style XML documents",
+        "To transform XML into HTML",
+        "To compress XML data"
+      ],
+      "correctAnswer": "To define the structure and data types for XML documents"
+    },
+    {
+      "questionText": "Which PHP function is used to close a mysqli database connection?",
+      "options": [
+        "close()",
+        "disconnect()",
+        "end()",
+        "shutdown()"
+      ],
+      "correctAnswer": "close()"
+    },
+    {
+      "questionText": "What jQuery method retrieves the text content of an element?",
+      "options": [
+        "text()",
+        "html()",
+        "val()",
+        "attr()"
+      ],
+      "correctAnswer": "text()"
+    },
+    {
+      "questionText": "What is the purpose of the 'Accept' header in a RESTful API request?",
+      "options": [
+        "To specify the expected response format",
+        "To authenticate the request",
+        "To compress the request data",
+        "To redirect the request"
+      ],
+      "correctAnswer": "To specify the expected response format"
     }
+    
   ]
 }
 
